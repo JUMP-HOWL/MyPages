@@ -1,0 +1,304 @@
+/*******************************************************************************
+ * Custom styles for improved visual appearance
+ ******************************************************************************/
+
+// Override theme colors with modern palette
+:root {
+  // Modern blue theme
+  --global-theme-color: #2563eb; // Modern blue
+  --global-hover-color: #1d4ed8; // Darker blue on hover
+  
+  // Improved text colors
+  --global-text-color: #1f2937; // Darker, more readable
+  --global-text-color-light: #6b7280; // Better contrast
+  
+  // Card and background improvements
+  --global-card-bg-color: #ffffff;
+  --global-bg-color: #f9fafb; // Subtle background
+  
+  // Better dividers
+  --global-divider-color: rgba(0, 0, 0, 0.08);
+}
+
+// ============================================================================
+// PUBLICATION IMPROVEMENTS
+// ============================================================================
+
+.publications {
+  ol.bibliography {
+    li {
+      // Better spacing and card effect
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+      
+      // Fix preview image white border issue
+      .preview {
+        img {
+          border-radius: 6px;
+          border: none !important; // Remove white border
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          background: transparent !important; // Remove white background
+          padding: 0 !important; // Remove padding that causes white space
+          object-fit: cover; // Better image fitting
+        }
+      }
+      
+      // Clean up abbreviation badges
+      .abbr {
+        abbr {
+          font-size: 0.75rem;
+          font-weight: 600;
+          padding: 0.35rem 0.65rem;
+          border-radius: 4px;
+          background-color: var(--global-theme-color) !important;
+          color: white !important;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          
+          a {
+            color: white !important;
+            text-decoration: none;
+          }
+        }
+      }
+      
+      // Improve title styling
+      .title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--global-text-color);
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+      }
+      
+      // Better author styling
+      .author {
+        font-size: 0.9rem;
+        color: var(--global-text-color-light);
+        margin-bottom: 0.3rem;
+        
+        em {
+          color: var(--global-text-color) !important;
+          font-weight: 700 !important;
+          font-style: normal !important;
+        }
+      }
+      
+      // Improve periodical (journal/conference) styling
+      .periodical {
+        font-size: 0.85rem;
+        color: var(--global-text-color-light);
+        font-style: italic;
+        margin-bottom: 0.3rem;
+      }
+      
+      // ========================================================================
+      // FIX MESSY BUTTONS - Make them clean text links
+      // ========================================================================
+      .links {
+        margin-top: 0.5rem !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem; // Spacing between links
+        font-size: 0.85rem; // Same size as periodical
+        
+        a.btn {
+          // Text link style instead of button
+          color: var(--global-theme-color) !important;
+          text-decoration: none !important;
+          font-weight: 400 !important;
+          padding: 0 !important;
+          border: none !important;
+          background: none !important;
+          box-shadow: none !important;
+          transition: all 0.2s ease;
+          
+          &:hover {
+            color: var(--global-hover-color) !important;
+            text-decoration: underline !important;
+            transform: none !important;
+            box-shadow: none !important;
+            background: none !important;
+          }
+          
+          // Add separator between links
+          &:not(:last-child)::after {
+            content: " |";
+            color: var(--global-text-color-light);
+            margin-left: 0.75rem;
+            text-decoration: none;
+          }
+        }
+        
+        // Award button special styling (keep as badge)
+        a.award.btn {
+          background: #fef3c7 !important;
+          border: 1px solid #fbbf24 !important;
+          color: #92400e !important;
+          padding: 0.25rem 0.65rem !important;
+          border-radius: 4px;
+          font-weight: 500;
+          
+          &::after {
+            content: none !important; // No separator for award badge
+          }
+          
+          &:hover {
+            background: #fbbf24 !important;
+            border-color: #f59e0b !important;
+            color: white !important;
+            text-decoration: none !important;
+          }
+        }
+      }
+      
+      // Better badges styling
+      .badges {
+        margin-top: 0.75rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        
+        span, a {
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  
+  // Better group headers
+  h2.bibliography {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-top: 2px solid var(--global-theme-color);
+    border-bottom: none;
+    text-align: left; // Change from right to left
+  }
+}
+
+// ============================================================================
+// PROFILE SECTION IMPROVEMENTS
+// ============================================================================
+
+.profile {
+  img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+// ============================================================================
+// NEWS SECTION IMPROVEMENTS
+// ============================================================================
+
+.news {
+  table {
+    tr {
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: rgba(37, 99, 235, 0.05);
+      }
+    }
+    
+    th {
+      color: var(--global-theme-color);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    
+    td {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// ============================================================================
+// NAVBAR IMPROVEMENTS
+// ============================================================================
+
+.navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  background-color: #ffffff !important; // Solid white background, not transparent
+  opacity: 1 !important; // Override the 0.95 opacity from _navbar.scss
+}
+
+// ============================================================================
+// GENERAL IMPROVEMENTS
+// ============================================================================
+
+// Hide progress bar completely
+#progress {
+  display: none !important;
+}
+
+// Better page background and fix navbar overlap
+body {
+  background-color: var(--global-bg-color);
+  padding-top: 70px !important; // Add padding to prevent content from hiding under fixed navbar
+}
+
+// Improve about page layout
+.post {
+  h2 {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Better social icons
+.social {
+  a {
+    transition: all 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  // Make social icons smaller and place them under profile image
+  .contact-icons {
+    font-size: 1.5rem !important; // Smaller icons (was 4rem)
+    margin-top: 0.5rem;
+    
+    a {
+      margin: 0 0.3rem; // Spacing between icons
+      
+      i::before {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+}
