@@ -7,15 +7,15 @@
   // Modern blue theme
   --global-theme-color: #2563eb; // Modern blue
   --global-hover-color: #1d4ed8; // Darker blue on hover
-  
+
   // Improved text colors
   --global-text-color: #1f2937; // Darker, more readable
   --global-text-color-light: #6b7280; // Better contrast
-  
+
   // Card and background improvements
   --global-card-bg-color: #ffffff;
   --global-bg-color: #f9fafb; // Subtle background
-  
+
   // Better dividers
   --global-divider-color: rgba(0, 0, 0, 0.08);
 }
@@ -34,12 +34,12 @@
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
-      
+
       &:hover {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         transform: translateY(-2px);
       }
-      
+
       // Fix preview image white border issue
       .preview {
         img {
@@ -51,7 +51,7 @@
           object-fit: cover; // Better image fitting
         }
       }
-      
+
       // Clean up abbreviation badges
       .abbr {
         abbr {
@@ -63,14 +63,14 @@
           color: white !important;
           text-transform: uppercase;
           letter-spacing: 0.5px;
-          
+
           a {
             color: white !important;
             text-decoration: none;
           }
         }
       }
-      
+
       // Improve title styling
       .title {
         font-size: 1.1rem;
@@ -79,20 +79,20 @@
         margin-bottom: 0.5rem;
         line-height: 1.4;
       }
-      
+
       // Better author styling
       .author {
         font-size: 0.9rem;
         color: var(--global-text-color-light);
         margin-bottom: 0.3rem;
-        
+
         em {
           color: var(--global-text-color) !important;
           font-weight: 700 !important;
           font-style: normal !important;
         }
       }
-      
+
       // Improve periodical (journal/conference) styling
       .periodical {
         font-size: 0.85rem;
@@ -100,7 +100,7 @@
         font-style: italic;
         margin-bottom: 0.3rem;
       }
-      
+
       // ========================================================================
       // FIX MESSY BUTTONS - Make them clean text links
       // ========================================================================
@@ -110,7 +110,7 @@
         flex-wrap: wrap;
         gap: 0.75rem; // Spacing between links
         font-size: 0.85rem; // Same size as periodical
-        
+
         a.btn {
           // Text link style instead of button
           color: var(--global-theme-color) !important;
@@ -121,7 +121,7 @@
           background: none !important;
           box-shadow: none !important;
           transition: all 0.2s ease;
-          
+
           &:hover {
             color: var(--global-hover-color) !important;
             text-decoration: underline !important;
@@ -129,7 +129,7 @@
             box-shadow: none !important;
             background: none !important;
           }
-          
+
           // Add separator between links
           &:not(:last-child)::after {
             content: " |";
@@ -138,7 +138,7 @@
             text-decoration: none;
           }
         }
-        
+
         // Award button special styling (keep as badge)
         a.award.btn {
           background: #fef3c7 !important;
@@ -147,11 +147,11 @@
           padding: 0.25rem 0.65rem !important;
           border-radius: 4px;
           font-weight: 500;
-          
+
           &::after {
             content: none !important; // No separator for award badge
           }
-          
+
           &:hover {
             background: #fbbf24 !important;
             border-color: #f59e0b !important;
@@ -160,22 +160,23 @@
           }
         }
       }
-      
+
       // Better badges styling
       .badges {
         margin-top: 0.75rem;
         display: flex;
         gap: 0.5rem;
         align-items: center;
-        
-        span, a {
+
+        span,
+        a {
           display: inline-flex;
           align-items: center;
         }
       }
     }
   }
-  
+
   // Better group headers
   h2.bibliography {
     color: var(--global-theme-color);
@@ -199,8 +200,10 @@
   img {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -216,18 +219,18 @@
   table {
     tr {
       transition: background-color 0.2s ease;
-      
+
       &:hover {
         background-color: rgba(37, 99, 235, 0.05);
       }
     }
-    
+
     th {
       color: var(--global-theme-color);
       font-weight: 600;
       font-size: 0.85rem;
     }
-    
+
     td {
       font-size: 0.9rem;
       line-height: 1.5;
@@ -269,7 +272,7 @@ body {
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }
-  
+
   ul {
     li {
       margin-bottom: 0.5rem;
@@ -282,20 +285,20 @@ body {
 .social {
   a {
     transition: all 0.2s ease;
-    
+
     &:hover {
       transform: translateY(-2px);
     }
   }
-  
+
   // Make social icons smaller and place them under profile image
   .contact-icons {
     font-size: 1.5rem !important; // Smaller icons (was 4rem)
     margin-top: 0.5rem;
-    
+
     a {
       margin: 0 0.3rem; // Spacing between icons
-      
+
       i::before {
         font-size: 1.5rem !important;
       }

@@ -33,7 +33,7 @@ I am **Junhao Gong** (龚俊豪), a PhD student at the [**Smart Sensing and Robo
 
 - **Ph.D. in Electronic Information** (2024 - Present)  
   Tsinghua Shenzhen International Graduate School, Tsinghua University  
-  *Supervisors: Prof. Wenbo Ding and Prof. Xiaojun Liang*
+  _Supervisors: Prof. Wenbo Ding and Prof. Xiaojun Liang_
 
 - **B.Eng. in Electronic Information Engineering** (2020 - 2024)  
   Harbin Institute of Technology
