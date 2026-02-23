@@ -292,17 +292,12 @@ body {
     }
   }
 
-  // Make social icons smaller and place them under profile image
+  // Social icons styling
   .contact-icons {
-    font-size: 0.75rem !important; // Half of 1.5rem
     margin-top: 0.5rem;
 
     a {
       margin: 0 0.3rem; // Spacing between icons
-
-      i::before {
-        font-size: 0.75rem !important;
-      }
     }
   }
 }
