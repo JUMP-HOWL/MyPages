@@ -4,9 +4,9 @@
 
 // Override theme colors with modern palette
 :root {
-  // Modern blue theme
-  --global-theme-color: #2563eb; // Modern blue
-  --global-hover-color: #1d4ed8; // Darker blue on hover
+  // Sky blue theme
+  --global-theme-color: #0ea5e9; // Sky blue
+  --global-hover-color: #0284c7; // Darker sky blue on hover
 
   // Improved text colors
   --global-text-color: #1f2937; // Darker, more readable
@@ -87,9 +87,10 @@
         margin-bottom: 0.3rem;
 
         em {
-          color: var(--global-text-color) !important;
-          font-weight: 700 !important;
-          font-style: normal !important;
+          color: #000000 !important; // Black color
+          font-weight: 700 !important; // Bold
+          font-style: normal !important; // Not italic
+          text-decoration: none !important; // No underline
         }
       }
 
@@ -293,14 +294,14 @@ body {
 
   // Make social icons smaller and place them under profile image
   .contact-icons {
-    font-size: 1.5rem !important; // Smaller icons (was 4rem)
+    font-size: 0.75rem !important; // Half of 1.5rem
     margin-top: 0.5rem;
 
     a {
       margin: 0 0.3rem; // Spacing between icons
 
       i::before {
-        font-size: 1.5rem !important;
+        font-size: 0.75rem !important;
       }
     }
   }
