@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper **MoiréTac** was accepted to **ICRA 2026**!
+🎉 Our paper **MoiréTac** was accepted to **ICRA 2026**! See you in Vienna!

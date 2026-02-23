@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper **UltraTac** was accepted to **IROS 2025**!
+🎉 Our paper **UltraTac** was accepted to **IROS 2025**! See you in Hangzhou!
