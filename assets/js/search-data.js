@@ -9,7 +9,21 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "dropdown-moirétac",
+              title: "MoiréTac",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "https://moiretac.junhaogong.top/";
+              },
+            },{id: "dropdown-ultratac",
+              title: "UltraTac",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "https://ultratac.junhaogong.top/";
+              },
+            },{id: "nav-publications",
           title: "Publications",
           description: "",
           section: "Navigation",
