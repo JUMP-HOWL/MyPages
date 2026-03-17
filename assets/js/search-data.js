@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "dropdown-moirétac",
+  },{id: "dropdown-flexicup",
+              title: "FlexiCup",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "http://flexicup.junhaogong.top/";
+              },
+            },{id: "dropdown-moirétac",
               title: "MoiréTac",
               description: "",
               section: "Dropdown",
@@ -55,6 +62,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-our-paper-moirétac-was-accepted-to-icra-2026-see-you-in-vienna",
           title: '🎉 Our paper MoiréTac was accepted to ICRA 2026! See you in Vienna!...',
+          description: "",
+          section: "News",},{id: "news-our-paper-flexicup-has-been-accepted-to-ieee-robotics-and-automation-letters-ral",
+          title: 'Our paper FlexiCup has been accepted to IEEE Robotics and Automation Letters (RAL)!🎉...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
