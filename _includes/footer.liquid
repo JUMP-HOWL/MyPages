@@ -11,7 +11,12 @@
   {% endif %}
   
   <!-- Visitor Counter -->
-  {% if site.statcounter.enabled and site.statcounter.project_id %}
+  {% if site.clustrmaps.enabled and site.clustrmaps.src %}
+    <!-- ClustrMaps Widget -->
+    <div style="margin-top: 20px; text-align: center;">
+      <script type="text/javascript" id="clustrmaps" src="{{ site.clustrmaps.src }}"></script>
+    </div>
+  {% elsif site.statcounter.enabled and site.statcounter.project_id %}
     <!-- Statcounter Code -->
     <div style="margin-top: 10px; text-align: center;">
       <script type="text/javascript">

@@ -98,10 +98,17 @@ flagcounter_id: z3P3 # your Flag Counter ID (leave empty to use a placeholder)
 # Statcounter configuration (https://statcounter.com/)
 # After signing up and adding your project, you'll get a project ID and security code
 statcounter:
-  enabled: true # set to true to enable Statcounter
+  enabled: false # set to true to enable Statcounter (temporarily disabled to show ClustrMaps)
   project_id: 13206463 # your Statcounter project ID
   security_code: 70c033a8 # your Statcounter security code
   invisible: false # set to true for invisible counter (recommended for professional sites)
+
+# ClustrMaps configuration (https://clustrmaps.com/)
+# After signing up and adding your site, you'll get a widget code
+# Extract the src value from the script tag (e.g., //clustrmaps.com/map_v2.js?d=XXXX&cl=ffffff&w=a)
+clustrmaps:
+  enabled: true # set to true to enable ClustrMaps
+  src: //mapmyvisitors.com/map.js?d=xplCUW5soKfDvf70OxRI2hY2huSmIXYF6pfWNCQFyXo&cl=ffffff&w=a # your ClustrMaps widget src
 
 # -----------------------------------------------------------------------------
 # Blog
