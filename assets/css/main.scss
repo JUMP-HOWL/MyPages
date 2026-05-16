@@ -37,3 +37,6 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+// Site-level overrides must be loaded last so they can win over theme defaults.
+@use "custom";

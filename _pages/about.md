@@ -40,7 +40,12 @@ I am **Junhao Gong** (龚俊豪), a PhD student at the [**Smart Sensing and Robo
 
 ## Research Interests
 
-I specialize in embedded development and am dedicated to designing reliable robotic systems. My goal is to enable robots to achieve sensing capabilities that surpass human perception. My research focuses on:
+I aim to become a full-stack robotics engineer, building robotic systems that connect sensing, manipulation, control, hardware integration, and real-world deployment. My current research focuses on tactile perception and contact-rich robotic manipulation:
 
-- **Tactile Sensor Development**: Designing and developing advanced tactile sensors for robots
-- **Tactile-aware Manipulation**: Enabling robots to perform precise manipulation tasks using tactile feedback
+- **Tactile Perception**: Developing tactile sensing methods that help robots perceive contact, force, and material interactions
+- **Tactile-guided Manipulation**: Using tactile feedback to improve grasping, suction-based manipulation, and other contact-rich robot operations
+
+## Internship
+
+- **Robotic Manipulation Intern**, **Sharpa** (Mar. 2026 - Present)<br>
+  Working on in-hand manipulation for robotic hands.

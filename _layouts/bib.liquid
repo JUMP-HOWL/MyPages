@@ -184,6 +184,15 @@
       {{ periodical | strip }}
     </div>
 
+    {% if entry.tech_stack or entry.industry_tags %}
+      <div class="tech-stack-tags" aria-label="technical stack tags">
+        {% assign tech_stack = entry.tech_stack | default: entry.industry_tags | split: ',' %}
+        {% for tag in tech_stack %}
+          <span class="tech-stack-tag">{{ tag | strip }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}

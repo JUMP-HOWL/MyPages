@@ -109,6 +109,57 @@
         }
       }
 
+      .tech-stack-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.26rem;
+        margin: 0.38rem 0 0.18rem;
+
+        .tech-stack-tag {
+          --tag-color: #0369a1;
+          --tag-bg: #eef7ff;
+          --tag-border: rgba(3, 105, 161, 0.18);
+
+          display: inline-flex;
+          align-items: center;
+          border: 1px solid var(--tag-border);
+          border-radius: 999px;
+          background: var(--tag-bg);
+          color: var(--tag-color);
+          font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+          font-size: 0.6rem;
+          font-weight: 700;
+          letter-spacing: 0.015em;
+          line-height: 1.25;
+          padding: 0.1rem 0.36rem;
+          white-space: nowrap;
+
+          &:nth-child(2) {
+            --tag-color: #0f766e;
+            --tag-bg: #ecfdf7;
+            --tag-border: rgba(15, 118, 110, 0.18);
+          }
+
+          &:nth-child(3) {
+            --tag-color: #7c2d12;
+            --tag-bg: #fff7ed;
+            --tag-border: rgba(124, 45, 18, 0.16);
+          }
+
+          &:nth-child(4) {
+            --tag-color: #7e22ce;
+            --tag-bg: #faf5ff;
+            --tag-border: rgba(126, 34, 206, 0.16);
+          }
+
+          &:nth-child(5) {
+            --tag-color: #be123c;
+            --tag-bg: #fff1f2;
+            --tag-border: rgba(190, 18, 60, 0.16);
+          }
+        }
+      }
+
       // ========================================================================
       // FIX MESSY BUTTONS - Make them clean text links
       // ========================================================================
